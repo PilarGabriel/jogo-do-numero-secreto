@@ -1,6 +1,6 @@
 listaNumerosSorteados = [];
 //lista com todos os números que serão sorteados
-let numeroMaximo = 10
+let numeroMaximo = 100
 //armazena a variável. numero máximo.
 let numeroSecreto = gerarNumeroAleatorio();
 //armazena o número que foi gerado pela função na variável
@@ -20,7 +20,7 @@ function exibirTextosNaTela(tag, texto) {
 
 exibirTextosNaTela ('h1', 'Boas-vindas ao Jogo do Número Secreto!');
 //chama a função com os parâmetros de tag(h1) e de texto
-exibirTextosNaTela ('p', 'Escolha um número entre 1 e 10');
+exibirTextosNaTela ('p', `Escolha um número entre 1 e ${numeroMaximo}`);
 //chama a função com os parâmetros de tag(p) e de texto
 
 
@@ -106,7 +106,7 @@ function reiniciarJogo() {
     //limpa o campo 'input'
     exibirTextosNaTela ('h1', 'Boas-vindas ao Jogo do Número Secreto!');
     //exibe texto no título
-    exibirTextosNaTela ('p', 'Escolha um número entre 1 e 10');
+    exibirTextosNaTela ('p', `Escolha um número entre 1 e ${numeroMaximo}`);
     //exibe texto no parágrafo
     document.getElementById('reiniciar').setAttribute('disabled', true);
 }
