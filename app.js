@@ -1,6 +1,6 @@
 listaNumerosSorteados = [];
 //lista com todos os números que serão sorteados
-let numeroMaximo = 100
+let numeroMaximo = 10
 //armazena a variável. numero máximo.
 let numeroSecreto = gerarNumeroAleatorio();
 //armazena o número que foi gerado pela função na variável
